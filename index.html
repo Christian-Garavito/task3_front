@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Datos de ingreso</h1>
+
+    <h2>Crear un Televisor</h2>
+    <form id="createForm">
+        <input type="text" id="createSerie" placeholder="Serie" required>
+        <input type="text" id="createMarca" placeholder="Marca" required>
+        <input type="text" id="createNombreCliente" placeholder="Nombre Cliente" required>
+        <input type="text" id="createApellidoCliente" placeholder="Apellido Cliente" required>
+        <input type="text" id="createNumeroCedula" placeholder="Numero Cedula" required>
+        <button type="submit">Crear</button>
+    </form>
+
+    <h3>Refrescar la Tabla</h3>
+    <button id="loadTelevisores">Cargar Televisores</button>
+    <ul id="televisoresList"></ul>
+
+    <h4>Buscar Televisor por Serie</h4>
+    <form id="findForm">
+        <input type="text" id="findSerie" placeholder="Serie" required>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="findResult"></div>
+
+    <h5>Cambiar Dato</h5>
+    <form id="updateForm">
+        <input type="text" id="updateSerie" placeholder="Serie" required>
+        <input type="text" id="updateMarca" placeholder="Marca" required>
+        <input type="text" id="updateNombreCliente" placeholder="Nombre Cliente" required>
+        <input type="text" id="updateApellidoCliente" placeholder="Apellido Cliente" required>
+        <input type="text" id="updateNumeroCedula" placeholder="Numero Cedula" required>
+        <button type="submit">Cambiar</button>
+    </form>
+
+    <h6>Delite Televisor</h6>
+    <form id="deleteForm">
+        <input type="text" id="deleteSerie" placeholder="Serie" required>
+        <button type="submit">Eliminar</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
