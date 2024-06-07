@@ -19,18 +19,15 @@
         <button type="submit">Crear</button>
     </form>
 
-    <h3>Refrescar la Tabla</h3>
-    <button id="loadTelevisores">Cargar Televisores</button>
-    <ul id="televisoresList"></ul>
-
-    <h4>Buscar Televisor por Serie</h4>
+    
+    <p>Buscar Televisor por Serie</p>
     <form id="findForm">
         <input type="text" id="findSerie" placeholder="Serie" required>
         <button type="submit">Buscar</button>
     </form>
     <div id="findResult"></div>
 
-    <h5>Cambiar Dato</h5>
+    <p>Cambiar Datos</p>
     <form id="updateForm">
         <input type="text" id="updateSerie" placeholder="Serie" required>
         <input type="text" id="updateMarca" placeholder="Marca" required>
@@ -40,11 +37,27 @@
         <button type="submit">Cambiar</button>
     </form>
 
-    <h6>Delite Televisor</h6>
+    <p>Borrar Televisor</p>
     <form id="deleteForm">
         <input type="text" id="deleteSerie" placeholder="Serie" required>
         <button type="submit">Eliminar</button>
     </form>
+
+    <p>Refrescar la Tabla</p>
+    <button id="loadTelevisores">cargar Televisores</button>
+    <table id="televisoresTable" border="1">
+        <thead>
+            <tr>
+                <th>Serie</th>
+                <th>Marca</th>
+                <th>Nombre Cliente</th>
+                <th>Apellido Cliente</th>
+                <th>Numero Cedula</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>

@@ -1,0 +1,59 @@
+#Entornos virtuales de Python
+venv/
+env/
+ENV/
+
+#Archivos compilados de Python
+*.py[cod]
+pycache/
+*.so
+
+#Directorios de distribución
+build/
+dist/
+*.egg-info/
+
+#Configuración del IDE y entorno
+.vscode/
+.idea/
+*.swp
+*.swo
+
+#Archivos y directorios del sistema operativo
+.DS_Store
+Thumbs.db
+
+#Archivos de logs
+*.log
+
+#Archivos de base de datos
+*.sqlite3
+
+#Archivos específicos de Flask
+instance/
+*.pyc
+*.pyo
+*.pyd
+
+#Archivos de configuración de PostgreSQL
+.pgadmin4.db
+
+#Archivos de configuración sensibles
+config.py
+.env
+
+#Dependencias instaladas
+pip-log.txt
+pip-delete-this-directory.txt
+
+#Archivos temporales y backups
+*.bak
+*.tmp
+*.temp
+
+Node.js
+node_modules/
+
+#Archivos de frontend
+/static/styles.css
+/static/script.js
