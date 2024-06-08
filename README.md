@@ -6,18 +6,19 @@ Una API para una base de datos usando Python y Flask.
 
 1. Clona este repositorio:
     bash
-    git clone https://github.com/tu-usuario/task3_front.git
+    git clone https://github.com/Christian-Garavito/task3_front.git
     cd task3_front
     
 2. Instala las dependencias:
     bash
-    pip install -r requirements.txt
+    pip install flask
+    pip install psycopg2-binary
     
 
 ## Configurar la Base de Datos
 
 1. Asegúrate de tener PostgreSQL instalado.
-2. Crea una base de datos llamada nombre_basedatos.
+2. Crea una base de datos.
 3. Crea la tabla ejecutando este script SQL:
 
     sql
@@ -46,13 +47,9 @@ Una API para una base de datos usando Python y Flask.
     DB_DATABASE = 'nombre_basedatos'
     DB_USER = 'usuario'
     DB_PASSWORD = 'contraseña'
-    DB_PORT = 5432
+    DB_PORT = numero de puerto
     
 
-2. Asegúrate de que config.py esté en tu .gitignore para que no se suba al repositorio:
-
-    plaintext
-    /config.py
     
 
 ## Uso
