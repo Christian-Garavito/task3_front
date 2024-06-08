@@ -5,7 +5,7 @@ host = DB_HOST
 database = DB_DATABASE
 user = DB_USER
 password = DB_PASSWORD
-port = DB_HOST
+port = DB_PORT
 
 def connect():
     return psycopg2.connect(dbname=database, user=user, password=password, host=host, port=port)
